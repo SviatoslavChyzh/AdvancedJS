@@ -32,21 +32,6 @@ function getJSON(){
     
 }
 
-function getUrlVars() {
-    var vars = {};
-    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-    vars[key] = value;
-    });
-    return vars;
-    }
-
-var userId = getUrlVars()["postId"];
-if (userId === undefined){
-    getJSON();
-} else {
-    gotoUser(userId);
-}
-
 function gotoUser(userId){
     result = '';
     document.getElementById('result').innerHTML = result;
@@ -84,4 +69,21 @@ function gotoUser(userId){
           
      })
 }
+
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+    vars[key] = value;
+    });
+    return vars;
+    }
+
+var userId = getUrlVars()["postId"];
+if (userId === undefined){
+    getJSON();
+} else {
+    gotoUser(userId);
+}
+
+
 
