@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'universe';
+    src: url('font/Univers Next Pro Regular.ttf');
+}
+
+body {
+    font-family: universe;
+}
+
+.content img{
+    width: 200px;
+    float: left;
+    padding: 50px;
+}
+
+.product h1 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: rgb(204,0,0);
+    
+}
+
+.product {
+    height: 500px;
+    width: 500px;
+    display: flex;    
+    flex-direction: column;    
+    justify-content: space-around;
+}
+
+.cost {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid black;
+}
+
+.price {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.info p {
+    margin-bottom: 10px;
+}
+
+.size {   
+    display: flex;
+}
+
+.size form {
+    width: 200px;
+    margin-right: 40px;
+}
+
+.size form select {
+    height: 40px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.size span{
+    display: inline-block;
+}
+
+.size form input {
+    margin-top: 10px;
+    height: 40px;
+    width: 50px;
+    text-align: center;
+}
+
+.circle {
+    border-radius: 50%;
+    border: 2px solid gainsboro;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    line-height:30px;
+    font-size: 14px;
+    color: gainsboro;
+    font-weight: bold;
+    text-align: center;    
+}
+
+.product .button {
+    height: 40px;
+    text-transform: uppercase;
+}
+
+.button.red {
+    color: white;
+    background-color: red;
+    border: none;
+}
+
+.button.white {
+    color: red;
+    background-color: white;
+    border: 1px solid red;
+}
